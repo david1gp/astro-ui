@@ -96,8 +96,8 @@ AGENTS.md
 .npmrc
 
 # project specific
-/*.json
-/*.sh
+#/*.json
+#/*.sh
 
 # Images
 public-images
