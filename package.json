@@ -56,7 +56,7 @@
   "type": "module",
   "private": false,
   "license": "MIT",
-  "homepage": "https://github.com/adaptive-shield-matrix/astro-ui",
+  "homepage": "https://github.com/david1gp/astro-ui",
   "description": "A library of reusable UI components for Astro projects. Built with TypeScript, Tailwind CSS, and Astro in static output mode. Components are designed to be accessible, customizable, and easy to integrate.",
   "keywords": [
     "astro",
@@ -70,6 +70,6 @@
     "typescript"
   ],
   "repository": {
-    "url": "git+https://github.com/adaptive-shield-matrix/astro-ui.git"
+    "url": "git+https://github.com/david1gp/astro-ui.git"
   }
 }
