@@ -18,7 +18,7 @@ fi
 cat > "$localMdFile" << EOF
 # Available Astro UI Components and utility functions
 
-These components from @adaptive-sm/astro-ui can be imported using the \`~/\` alias.
+These components from @adaptive-ds/astro-ui can be imported using the \`~/\` alias.
 Generated at: $(date +"%Y-%m-%d %H:%M")
 
 EOF

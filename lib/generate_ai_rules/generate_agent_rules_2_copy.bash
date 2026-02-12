@@ -2,7 +2,7 @@
 set -e # Exit immediately if a command exits with a non-zero status
 set -x # Print all executed commands to the terminal
 
-srcDir="node_modules/@adaptive-sm/astro-ui/.roo"
+srcDir="node_modules/@adaptive-ds/astro-ui/.roo"
 # srcDir="/home/david/Coding/adaptive-astro-ui/.roo/rules-code"
 dstDir=".roo"
 

@@ -4,8 +4,8 @@ A library of reusable UI components for Astro projects. Built with TypeScript, T
 
 Quick link
 
-- code - https://github.com/adaptive-shield-matrix/astro-ui
-- npm - https://www.npmjs.com/package/@adaptive-sm/astro-ui
+- code - https://github.com/david1gp/astro-ui
+- npm - https://www.npmjs.com/package/@adaptive-ds/astro-ui
 - component demo - https://adaptive-astro-ui.pages.dev/
 
 ## Installation
@@ -13,7 +13,7 @@ Quick link
 Install the package using Bun:
 
 ```bash
-bun add @adaptive-sm/astro-ui
+bun add @adaptive-ds/astro-ui
 ```
 
 ## Tailwind CSS Configuration
@@ -21,7 +21,7 @@ bun add @adaptive-sm/astro-ui
 To ensure Tailwind scans the library's source files for classes (since components are published as source without a build step), add the following `@source` directive to your project's `src/layouts/tailwind.css` (or equivalent global stylesheet):
 
 ```css
-@source '/node_modules/@adaptive-sm/astro-ui/lib/**/*.{astro,html,md,mdx,ts,tsx}';
+@source '/node_modules/@adaptive-ds/astro-ui/lib/**/*.{astro,html,md,mdx,ts,tsx}';
 ```
 
 This tells Tailwind to include classes from the library's `.astro`, `.ts`, and other relevant files in the purge process, preventing unused classes from being purged during the build. Without it, Tailwind might not detect classes used in imported components, leading to missing styles.
@@ -38,7 +38,7 @@ In your `tsconfig.json`, set up the `~` alias to point to the library:
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "~ui/*": ["node_modules/@adaptive-sm/astro-ui/lib/*"]
+      "~ui/*": ["node_modules/@adaptive-ds/astro-ui/lib/*"]
     }
   }
 }
@@ -55,7 +55,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "~": new URL("./node_modules/@adaptive-sm/astro-ui/lib", import.meta.url).pathname,
+        "~": new URL("./node_modules/@adaptive-ds/astro-ui/lib", import.meta.url).pathname,
       },
     },
   },
@@ -240,4 +240,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Styled with [Tailwind CSS](https://tailwindcss.com/).
 - Icons from [MDI](https://pictogrammers.com/library/mdi/).
 
-For more information, visit the [GitHub repository](https://github.com/adaptive-shield-matrix/astro-ui).
+For more information, visit the [GitHub repository](https://github.com/david1gp/astro-ui).
