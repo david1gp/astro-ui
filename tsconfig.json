@@ -56,7 +56,7 @@
         "lib/*"
       ],
       "~utils/*": [
-        "./node_modules/@adaptive-sm/utils/dist/*"
+        "./node_modules/@adaptive-ds/utils/dist/*"
       ],
     },
     //
