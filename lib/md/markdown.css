@@ -88,5 +88,5 @@ rem -> px
 }
 
 .markdown-body a {
-  color: hsl(var(--link));
+  color: var(--primary);
 }
