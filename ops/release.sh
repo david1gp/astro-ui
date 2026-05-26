@@ -8,6 +8,18 @@ REPO_URL=$(git remote get-url origin | sed 's/\.git$//')
 REPO_NAME=$(echo "$REPO_URL" | sed 's/.*://')
 PACKAGE_JSON="package.json"
 
+# --- Preflight checks ---
+if ! command -v gh >/dev/null 2>&1; then
+  echo "Error: GitHub CLI is not installed or not available in PATH."
+  exit 1
+fi
+
+if ! gh auth status --hostname github.com >/dev/null 2>&1; then
+  echo "Error: GitHub CLI is not authenticated for github.com."
+  echo "Run: gh auth login"
+  exit 1
+fi
+
 # --- Helper: get current version from package.json ---
 CURRENT_VERSION=$(jq -r '.version' "$PACKAGE_JSON")
 
