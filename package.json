@@ -1,74 +1,75 @@
 {
-  "name": "@adaptive-ds/astro-ui",
-  "version": "0.5.3",
-  "scripts": {
-    "astro": "astro",
-    "dev": "nice -5 astro dev",
-    "check": "clear && nice -15 astro check --minimumSeverity error",
-    "build": "nice -15 astro build",
-    "deploy": "bash ./ops/deploy.bash",
-    "upload": "bun run wrangler pages deploy ./dist --project-name=adaptive-astro-ui --commit-dirty",
-    "tag": "git branch -f deployed",
-    "release": "bash ./ops/release.sh",
-    "generateDemoList": "bun run ./src/demos/generateDemoList.cli.ts",
-    "generateImageList": "bun run ./src/pages/images/generateImageList.cli.ts",
-    "update": "nice -15 bun x npm-check-updates -u && bun i",
-    "update:commit": "bun x npm-check-updates -u && bun i && git add package.json && bun run tsc && git commit -m \"chore(deps): update dependencies\" && git push",
-    "clean": "rm -rf ./dist",
-    "reset": "rm -rf ./node_modules"
-  },
-  "devDependencies": {
-    "@adaptive-ds/utils": "^0.7.0",
-    "@astrojs/check": "^0.9.6",
-    "@biomejs/biome": "^2.3.15",
-    "@mdi/js": "^7.4.47",
-    "@tailwindcss/vite": "^4.1.18",
-    "@types/bun": "latest",
-    "astro": "^5.17.2",
-    "dayjs": "^1.11.19",
-    "image-size": "^2.0.2",
-    "prettier": "^3.8.1",
-    "prettier-plugin-astro": "^0.14.1",
-    "rehype-autolink-headings": "^7.1.0",
-    "rehype-slug": "^6.0.0",
-    "remark-toc": "^9.0.0",
-    "rollup-plugin-visualizer": "^6.0.5",
-    "tailwind-merge": "^3.4.0",
-    "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3",
-    "wrangler": "^4.65.0"
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 120,
-    "trailingComma": "all",
-    "plugins": [
-      "prettier-plugin-astro"
-    ]
-  },
-  "files": [
-    "lib"
-  ],
-  "exports": {
-    "./*": "./lib/*"
-  },
-  "type": "module",
-  "private": false,
-  "license": "MIT",
-  "homepage": "https://github.com/david1gp/astro-ui",
-  "description": "A library of reusable UI components for Astro projects. Built with TypeScript, Tailwind CSS, and Astro in static output mode. Components are designed to be accessible, customizable, and easy to integrate.",
-  "keywords": [
-    "astro",
-    "astro-ui",
-    "tailwind",
-    "tailwindcss",
-    "components",
-    "ui-components",
-    "web-development",
-    "frontend",
-    "typescript"
-  ],
-  "repository": {
-    "url": "git+https://github.com/david1gp/astro-ui.git"
-  }
+	"name": "@adaptive-ds/astro-ui",
+	"version": "0.5.3",
+	"scripts": {
+		"astro": "astro",
+		"dev": "nice -5 astro dev",
+		"check": "clear && nice -15 astro check --minimumSeverity error",
+		"build": "nice -15 astro build",
+		"deploy": "bash ./ops/deploy.bash",
+		"upload": "bun run wrangler pages deploy ./dist --project-name=adaptive-astro-ui --commit-dirty",
+		"tag": "git branch -f deployed",
+		"release": "bash ./ops/release.sh",
+		"generateDemoList": "bun run ./src/demos/generateDemoList.cli.ts",
+		"generateImageList": "bun run ./src/pages/images/generateImageList.cli.ts",
+		"update": "nice -15 bun x npm-check-updates -u && bun i",
+		"update:commit": "bun x npm-check-updates -u && bun i && git add package.json && bun run tsc && git commit -m \"chore(deps): update dependencies\" && git push",
+		"clean": "rm -rf ./dist",
+		"reset": "rm -rf ./node_modules",
+		"format": "biome format --write src package.json tsconfig.json astro.config.mjs biome.json"
+	},
+	"devDependencies": {
+		"@adaptive-ds/utils": "^0.7.0",
+		"@astrojs/check": "^0.9.6",
+		"@biomejs/biome": "^2.5.2",
+		"@mdi/js": "^7.4.47",
+		"@tailwindcss/vite": "^4.1.18",
+		"@types/bun": "latest",
+		"astro": "^5.17.2",
+		"dayjs": "^1.11.19",
+		"image-size": "^2.0.2",
+		"prettier": "^3.8.1",
+		"prettier-plugin-astro": "^0.14.1",
+		"rehype-autolink-headings": "^7.1.0",
+		"rehype-slug": "^6.0.0",
+		"remark-toc": "^9.0.0",
+		"rollup-plugin-visualizer": "^6.0.5",
+		"tailwind-merge": "^3.4.0",
+		"tailwindcss": "^4.1.18",
+		"typescript": "^5.9.3",
+		"wrangler": "^4.65.0"
+	},
+	"prettier": {
+		"semi": false,
+		"printWidth": 120,
+		"trailingComma": "all",
+		"plugins": [
+			"prettier-plugin-astro"
+		]
+	},
+	"files": [
+		"lib"
+	],
+	"exports": {
+		"./*": "./lib/*"
+	},
+	"type": "module",
+	"private": false,
+	"license": "MIT",
+	"homepage": "https://github.com/david1gp/astro-ui",
+	"description": "A library of reusable UI components for Astro projects. Built with TypeScript, Tailwind CSS, and Astro in static output mode. Components are designed to be accessible, customizable, and easy to integrate.",
+	"keywords": [
+		"astro",
+		"astro-ui",
+		"tailwind",
+		"tailwindcss",
+		"components",
+		"ui-components",
+		"web-development",
+		"frontend",
+		"typescript"
+	],
+	"repository": {
+		"url": "git+https://github.com/david1gp/astro-ui.git"
+	}
 }

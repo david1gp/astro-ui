@@ -1,13 +1,13 @@
 import {
-    mdiAccountKey,
-    mdiMonitorCellphone,
-    mdiRocketLaunch,
-    mdiServerNetwork,
-    mdiShieldHalfFull,
-    mdiShieldLock,
-    mdiSync,
-    mdiThemeLightDark,
-    mdiWheelchair,
+  mdiAccountKey,
+  mdiMonitorCellphone,
+  mdiRocketLaunch,
+  mdiServerNetwork,
+  mdiShieldHalfFull,
+  mdiShieldLock,
+  mdiSync,
+  mdiThemeLightDark,
+  mdiWheelchair,
 } from "@mdi/js"
 import type { GridFeatureType } from "~ui/grid/GridFeatureType"
 

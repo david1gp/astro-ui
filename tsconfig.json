@@ -1,81 +1,69 @@
 {
-  "include": [
-    ".astro/types.d.ts",
-    "pages/**/*",
-    "lib/**/*.ts",
-    "lib/**/*.astro",
-    "src/**/*.ts",
-    "src/**/*.astro"
-  ],
-  "exclude": [
-    "dist"
-  ],
-  "compilerOptions": {
-    "module": "preserve",
-    "target": "esnext",
-    "moduleResolution": "bundler",
-    //
-    // library settings
-    //
-    "noEmit": true,
-    // "composite": true,
-    // "declaration": true,
-    // "declarationMap": true,
-    // "sourceMap": true,
-    //
-    // included libraries
-    //
-    "lib": [
-      "es2024",
-      "dom",
-      "dom.iterable"
-    ],
-    //
-    // my performance setting
-    //
-    "skipLibCheck": true,
-    //
-    // my setting
-    //
-    "allowJs": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "useDefineForClassFields": true,
-    "downlevelIteration": true,
-    "moduleDetection": "force",
-    "jsx": "preserve",
-    //
-    // absolute import paths
-    //
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "~ui/*": [
-        "lib/*"
-      ],
-      "~utils/*": [
-        "./node_modules/@adaptive-ds/utils/dist/*"
-      ],
-    },
-    //
-    // type imports - https://www.typescriptlang.org/tsconfig#verbatimModuleSyntax
-    //
-    "verbatimModuleSyntax": true,
-    // "allowImportingTsExtensions": true,
-    //
-    // code quality settings
-    //
-    "strict": true,
-    "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitOverride": true
-  }
+	"include": [
+		".astro/types.d.ts",
+		"pages/**/*",
+		"lib/**/*.ts",
+		"lib/**/*.astro",
+		"src/**/*.ts",
+		"src/**/*.astro"
+	],
+	"exclude": ["dist"],
+	"compilerOptions": {
+		"module": "preserve",
+		"target": "esnext",
+		"moduleResolution": "bundler",
+		//
+		// library settings
+		//
+		"noEmit": true,
+		// "composite": true,
+		// "declaration": true,
+		// "declarationMap": true,
+		// "sourceMap": true,
+		//
+		// included libraries
+		//
+		"lib": ["es2024", "dom", "dom.iterable"],
+		//
+		// my performance setting
+		//
+		"skipLibCheck": true,
+		//
+		// my setting
+		//
+		"allowJs": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"useDefineForClassFields": true,
+		"downlevelIteration": true,
+		"moduleDetection": "force",
+		"jsx": "preserve",
+		//
+		// absolute import paths
+		//
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"~ui/*": ["lib/*"],
+			"~utils/*": ["./node_modules/@adaptive-ds/utils/dist/*"]
+		},
+		//
+		// type imports - https://www.typescriptlang.org/tsconfig#verbatimModuleSyntax
+		//
+		"verbatimModuleSyntax": true,
+		// "allowImportingTsExtensions": true,
+		//
+		// code quality settings
+		//
+		"strict": true,
+		"strictNullChecks": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitOverride": true
+	}
 }
