@@ -135,7 +135,7 @@ Refer to individual component documentation in the source code for props and var
 usage:
 
 - Choose from over 7000 icons: https://pictogrammers.com/library/mdi/
-- Import name from "@mdi/js" library
+- Import each icon from its specific `@adaptive-ds/mdi/<icon>.js` module
 - Passed on as `path` prop
 
 ### Images

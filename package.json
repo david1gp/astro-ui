@@ -19,10 +19,10 @@
 		"format": "biome format --write src package.json tsconfig.json astro.config.mjs biome.json"
 	},
 	"devDependencies": {
+		"@adaptive-ds/mdi": "^0.1.2",
 		"@adaptive-ds/utils": "^0.7.0",
 		"@astrojs/check": "^0.9.6",
 		"@biomejs/biome": "^2.5.2",
-		"@mdi/js": "^7.4.47",
 		"@tailwindcss/vite": "^4.1.18",
 		"@types/bun": "latest",
 		"astro": "^5.17.2",
