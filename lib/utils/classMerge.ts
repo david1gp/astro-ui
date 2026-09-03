@@ -1,10 +1,6 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { cn } from "cn"
+import type { ClassValue } from "cn"
 
-/**
- * https://github.com/dcastil/tailwind-merge
- * @param inputs
- */
 export function classMerge(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+	return cn(...inputs)
 }
