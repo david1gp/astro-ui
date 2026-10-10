@@ -35,16 +35,14 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"useDefineForClassFields": true,
-		"downlevelIteration": true,
 		"moduleDetection": "force",
 		"jsx": "preserve",
 		//
 		// absolute import paths
 		//
-		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"],
-			"~ui/*": ["lib/*"],
+			"@/*": ["./src/*"],
+			"~ui/*": ["./lib/*"],
 			"~utils/*": ["./node_modules/@adaptive-ds/utils/dist/*"]
 		},
 		//

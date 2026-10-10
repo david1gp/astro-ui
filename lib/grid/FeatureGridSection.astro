@@ -5,7 +5,6 @@ import { mdiLink } from "@adaptive-ds/mdi/mdiLink.js"
 import type { GridFeatureType } from "./GridFeatureType"
 import { classMerge } from "~ui/utils/classMerge"
 import type { HTMLAttributes } from "astro/types"
-import type { CssProperties } from "node_modules/astro/dist/assets/fonts/definitions"
 import { classesShadowMdLg } from "~ui/card/classesShadow"
 
 interface Props {
@@ -22,7 +21,7 @@ interface Props {
   gridClass?: string
   cardClass?: string
   restProps?: HTMLAttributes<"section">
-  style?: CssProperties
+  style?: Record<string, string | undefined>
 }
 const p = Astro.props
 ---
