@@ -4,7 +4,7 @@
 	"scripts": {
 		"astro": "astro",
 		"dev": "nice -5 astro dev",
-		"check": "clear && nice -15 astro check --minimumSeverity error",
+		"astro:check": "clear && nice -15 astro check --minimumSeverity error",
 		"build": "nice -15 astro build",
 		"deploy": "bash ./ops/deploy.bash",
 		"upload": "bun run wrangler pages deploy ./dist --project-name=adaptive-astro-ui --commit-dirty",
@@ -13,7 +13,7 @@
 		"generateDemoList": "bun run ./src/demos/generateDemoList.cli.ts",
 		"generateImageList": "bun run ./src/pages/images/generateImageList.cli.ts",
 		"update": "nice -15 bun x npm-check-updates -u && bun i",
-		"update:commit": "bun x npm-check-updates -u && bun i && git add package.json && bun --check && git commit -m \"chore(deps): update dependencies\" && git push",
+		"update:commit": "bun x npm-check-updates -u && bun i && git add package.json && bun check && git commit -m \"chore(deps): update dependencies\" && git push",
 		"clean": "rm -rf ./dist",
 		"reset": "rm -rf ./node_modules",
 		"format": "biome format --write src package.json tsconfig.json astro.config.mjs biome.json"
