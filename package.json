@@ -22,7 +22,7 @@
 		"@adaptive-ds/mdi": "^0.1.2",
 		"@adaptive-ds/utils": "^0.7.0",
 		"@astrojs/check": "^0.9.6",
-		"@biomejs/biome": "^2.5.2",
+		"@biomejs/biome": "^2.6.4",
 		"@tailwindcss/vite": "^4.1.18",
 		"@types/bun": "latest",
 		"astro": "^5.17.2",
