@@ -18,6 +18,8 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+  --color-border: oklch(0.915 0.005 264);
+  --color-input: oklch(0.87 0.006 264);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -47,6 +49,15 @@
     --foreground: oklch(0.985 0 0);
     --muted: oklch(0.269 0 0);
     --muted-foreground: oklch(82.812% 0.02718 104.695);
+    --color-border: oklch(0.29 0.006 260);
+    --color-input: oklch(0.34 0.006 260);
+  }
+}
+
+/* Tailwind v4 soft-border fix: restore neutral default border color (was currentColor in v4) */
+@layer base {
+  * {
+    border-color: var(--color-border);
   }
 }
 
